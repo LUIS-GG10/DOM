@@ -5,7 +5,7 @@ body {
     color: white;
 }
 
-button {
+.BTN {
     background-color: #e66a66;
     color: #2b2a33;
     border: none;
@@ -14,6 +14,8 @@ button {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    padding: 5PX;
+    margin: 10px;
 }
 
 .container {
@@ -23,8 +25,22 @@ button {
     align-items: center;
 }
 
-.profile {
+.profile 
+{
+    width: 200px;
     margin: 50px;
     border-radius: 25px;
     background: linear-gradient(#e66465, #9198e5);
+}
+.profiles 
+{
+    width: auto;
+    margin: 50px;
+    border-radius: 25px;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.input{
+    padding: 10px;
+    margin: 10px
 }

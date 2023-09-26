@@ -22,13 +22,6 @@ const users = [
         }
     }
 ]
-////////////////////////////////////////
-// - Obtener la info
-// - Crear un contenedor para perfil clase = profile
-// - Crear elemento para user_name
-// - "" "" para description 
-// - "" "" age
-///  - "" " " lista de bandas. --> iterar por cada banda
 
 const CARD_SECTION = document.getElementById('profiles');
 
@@ -81,6 +74,24 @@ users.forEach(user => {
     renderElements(card, elementsWithData);
     CARD_SECTION.append(card);
 
+})
+
+
+const inputName = document.getElementById('UserI');
+const userName = document.getElementById('username');
+
+const InputAge=document.getElementById('UserA')
+const userAge=document.getElementById('age')
+
+const InputDes=document.getElementById('UserD')
+const userDes=document.getElementById('des')
+
+const profileBtn = document.getElementById('ProfileBtn');
+
+profileBtn.addEventListener('click', () => {
+    userName.textContent = inputName.value;
+    userAge.textContent= InputAge.value;
+    userDes.textContent= InputDes.value;
 })
 
 
